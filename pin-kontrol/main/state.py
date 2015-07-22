@@ -7,23 +7,24 @@ def state(gpio):
 	f= open ('/sys/class/gpio/export','w')
 	f.write(str(gpio))
 	f.close()
-	state_giden(gpio)
+	durum = state_giden(gpio)
 	#Unexport Pin 
 	f= open ('/sys/class/gpio/unexport','w')
 	f.write(str(gpio))
 	f.close()
+	return durum
 
 
 def state_giden(gpio):
 	
 
 	try:
-		k = os.system('cat /sys/class/gpio/gpio' + gpio + '/value')
-		if k==0:
-			print "OFF"
-			pass
+		x = os.popen('cat /sys/class/gpio/gpio' + gpio + '/value').read(1)
+		#x = subprocess.check_output(['cat /sys/class/gpio/gpio' + gpio + '/value'])
+		#print type(x)
 	finally:
-	    print "!" #to do!
-	pass
+		pass
 
-state(26) #test pin
+	return x
+
+#state(26)#Test pin
