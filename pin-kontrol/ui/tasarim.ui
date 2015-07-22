@@ -28,11 +28,11 @@
      <height>381</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <layout class="QHBoxLayout" name="SOL">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
+     <layout class="QVBoxLayout" name="sag_dik">
       <item>
-       <widget class="QCheckBox" name="checkBox_2">
+       <widget class="QCheckBox" name="chkbxa_5v_1">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -42,7 +42,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_21">
+       <widget class="QCheckBox" name="chkbxa_5v_2">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -52,7 +52,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_22">
+       <widget class="QCheckBox" name="chkbxa_G1">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -62,7 +62,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_23">
+       <widget class="QCheckBox" name="chkbxa_14">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -72,7 +72,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_32">
+       <widget class="QCheckBox" name="chkbxa_15">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -82,7 +82,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_31">
+       <widget class="QCheckBox" name="chkbxa_18">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -92,7 +92,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_13">
+       <widget class="QCheckBox" name="chkbxa_G2">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -102,7 +102,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_30">
+       <widget class="QCheckBox" name="chkbxa_23">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -112,7 +112,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_29">
+       <widget class="QCheckBox" name="chkbxa_24">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -122,7 +122,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_28">
+       <widget class="QCheckBox" name="chkbxa_G3">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -132,7 +132,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_45">
+       <widget class="QCheckBox" name="chkbxa_25">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -142,7 +142,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_46">
+       <widget class="QCheckBox" name="chkbxa_08">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -152,7 +152,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_27">
+       <widget class="QCheckBox" name="chkbxa_07">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -162,7 +162,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_26">
+       <widget class="QCheckBox" name="chkbxa_SC">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -172,7 +172,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_25">
+       <widget class="QCheckBox" name="chkbxa_G4">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -182,7 +182,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_24">
+       <widget class="QCheckBox" name="chkbxa_12">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -192,7 +192,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_14">
+       <widget class="QCheckBox" name="chkbxa_G5">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -202,7 +202,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_19">
+       <widget class="QCheckBox" name="chkbxa_16">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -212,7 +212,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_17">
+       <widget class="QCheckBox" name="chkbxa_20">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -222,7 +222,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_16">
+       <widget class="QCheckBox" name="chkbxa_21">
         <property name="layoutDirection">
          <enum>Qt::LeftToRight</enum>
         </property>
@@ -234,142 +234,142 @@
      </layout>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
+     <layout class="QVBoxLayout" name="sol_dik">
       <item>
-       <widget class="QCheckBox" name="checkBox_15">
+       <widget class="QCheckBox" name="chkbxs_3v3_1">
         <property name="text">
          <string>3v3</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_43">
+       <widget class="QCheckBox" name="chkbxs_02">
         <property name="text">
          <string>GPIO 02</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_42">
+       <widget class="QCheckBox" name="chkbxs_03">
         <property name="text">
          <string>GPIO 03</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_41">
+       <widget class="QCheckBox" name="chkbxs_04">
         <property name="text">
          <string>GPIO 04</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_40">
+       <widget class="QCheckBox" name="chkbxs_G1">
         <property name="text">
          <string>GND</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_39">
+       <widget class="QCheckBox" name="chkbxs_17">
         <property name="text">
          <string>GPIO 17</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_38">
+       <widget class="QCheckBox" name="chkbxs_27">
         <property name="text">
          <string>GPIO 27</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_37">
+       <widget class="QCheckBox" name="chkbxs_22">
         <property name="text">
          <string>GPIO 22</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_36">
+       <widget class="QCheckBox" name="chkbxs_3v3_2">
         <property name="text">
          <string>3v3</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_35">
+       <widget class="QCheckBox" name="chkbxs_10">
         <property name="text">
          <string>GPIO 10</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_47">
+       <widget class="QCheckBox" name="chkbxs_09">
         <property name="text">
          <string>GPIO 09</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_48">
+       <widget class="QCheckBox" name="chkbxs_11">
         <property name="text">
          <string>GPIO 11</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_34">
+       <widget class="QCheckBox" name="chkbxs_G2">
         <property name="text">
          <string>GND</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_33">
+       <widget class="QCheckBox" name="chkbxs_SD">
         <property name="text">
          <string>ID_SD</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_18">
+       <widget class="QCheckBox" name="chkbxs_05">
         <property name="text">
          <string>GPIO 05</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_11">
+       <widget class="QCheckBox" name="chkbxs_06">
         <property name="text">
          <string>GPIO 06</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_20">
+       <widget class="QCheckBox" name="chkbxs_13">
         <property name="text">
          <string>GPIO 13</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_12">
+       <widget class="QCheckBox" name="chkbxs_19">
         <property name="text">
          <string>GPIO 19</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox">
+       <widget class="QCheckBox" name="chkbxs_26">
         <property name="text">
          <string>GPIO 26</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_44">
+       <widget class="QCheckBox" name="chkbxs_G3">
         <property name="text">
          <string>GND</string>
         </property>
@@ -388,11 +388,11 @@
      <height>381</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_5">
+   <layout class="QVBoxLayout" name="SAG">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_16">
       <item>
-       <widget class="QPushButton" name="btn_ac">
+       <widget class="QPushButton" name="btn_uygula">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
           <horstretch>0</horstretch>
@@ -422,7 +422,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_ac_2">
+       <widget class="QPushButton" name="btn_kapat">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
           <horstretch>0</horstretch>
