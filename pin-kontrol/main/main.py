@@ -17,7 +17,7 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
     def __init__(self):
         QtGui.QMainWindow.__init__(self)
         self.setupUi(self)
-        QtCore.QObject.connect(self.btn_ac, QtCore.SIGNAL("clicked()"), self.check_state())
+        QtCore.QObject.connect(self.btn_ac, QtCore.SIGNAL("clicked()"), self.apply)
         self.check_state()
 
 
@@ -51,7 +51,27 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
             pass
 
 
-    
+    def apply(self):
+        if self.chkbx_06.isChecked():
+            switch(6,1)
+        else:
+            switch(6,0)
+
+        if self.chkbx_26.isChecked():
+            switch(26,1)
+        else:
+            switch(26,0)
+
+        if self.chkbx_13.isChecked():
+            switch(13,1)
+        else:
+            switch(13,0)
+
+        if self.chkbx_19.isChecked():
+            switch(19,1)
+        else:
+            switch(19,0)
+
 
     def app(self):
         screen = QtGui.QDesktopWidget().screenGeometry()
