@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file '../ui/tasarim.ui'
 #
-# Created: Thu Jul 23 01:18:02 2015
+# Created: Fri Jul 24 01:14:44 2015
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -200,14 +200,6 @@ class Ui_Dialog(object):
         self.SAG.addLayout(self.horizontalLayout_16)
         self.horizontalLayout_3 = QtGui.QHBoxLayout()
         self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
-        self.btn_ac_3 = QtGui.QPushButton(self.verticalLayoutWidget_3)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Ignored, QtGui.QSizePolicy.Ignored)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.btn_ac_3.sizePolicy().hasHeightForWidth())
-        self.btn_ac_3.setSizePolicy(sizePolicy)
-        self.btn_ac_3.setObjectName(_fromUtf8("btn_ac_3"))
-        self.horizontalLayout_3.addWidget(self.btn_ac_3)
         self.btn_kapat = QtGui.QPushButton(self.verticalLayoutWidget_3)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Ignored, QtGui.QSizePolicy.Ignored)
         sizePolicy.setHorizontalStretch(0)
@@ -216,6 +208,14 @@ class Ui_Dialog(object):
         self.btn_kapat.setSizePolicy(sizePolicy)
         self.btn_kapat.setObjectName(_fromUtf8("btn_kapat"))
         self.horizontalLayout_3.addWidget(self.btn_kapat)
+        self.btn_bilgi = QtGui.QPushButton(self.verticalLayoutWidget_3)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Ignored, QtGui.QSizePolicy.Ignored)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.btn_bilgi.sizePolicy().hasHeightForWidth())
+        self.btn_bilgi.setSizePolicy(sizePolicy)
+        self.btn_bilgi.setObjectName(_fromUtf8("btn_bilgi"))
+        self.horizontalLayout_3.addWidget(self.btn_bilgi)
         self.SAG.addLayout(self.horizontalLayout_3)
         self.verticalLayout_6 = QtGui.QVBoxLayout()
         self.verticalLayout_6.setObjectName(_fromUtf8("verticalLayout_6"))
@@ -303,8 +303,8 @@ class Ui_Dialog(object):
         self.chkbxs_26.setText(_translate("Dialog", "GPIO 26", None))
         self.chkbxs_G3.setText(_translate("Dialog", "GND", None))
         self.btn_uygula.setText(_translate("Dialog", "Uygula", None))
-        self.btn_ac_3.setText(_translate("Dialog", "Kapat", None))
-        self.btn_kapat.setText(_translate("Dialog", "Bilgi", None))
+        self.btn_kapat.setText(_translate("Dialog", "Kapat", None))
+        self.btn_bilgi.setText(_translate("Dialog", "Bilgi", None))
         self.label_50.setText(_translate("Dialog", "       3,3 V Çıkış Pini", None))
         self.label_49.setText(_translate("Dialog", "3v3", None))
         self.label_51.setText(_translate("Dialog", "           5 V Çıkış Pini", None))

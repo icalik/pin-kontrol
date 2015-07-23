@@ -17,62 +17,53 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
     def __init__(self):
         QtGui.QMainWindow.__init__(self)
         self.setupUi(self)
-        QtCore.QObject.connect(self.btn_ac, QtCore.SIGNAL("clicked()"), self.apply)
-        self.check_state()
+        QtCore.QObject.connect(self.btn_uygula, QtCore.SIGNAL("clicked()"), self.apply) #Butona tiklandiginda self.apply yordamini cagir
+        self.check_state() # init oldugunda calis
 
+    def check_state(self): #Pin durum kontrol ve pine gore checkbox checked durumu
 
-    def check_state(self):
         if state(26) == '0':
-            self.chkbx_26.setChecked(False)
+            self.chkbxs_26.setChecked(False)
         elif state(26) == '1':
-            self.chkbx_26.setChecked(True)
+            self.chkbxs_26.setChecked(True)
         else:
             pass
 
         if state(19) == '0':
-            self.chkbx_19.setChecked(False)
+            self.chkbxs_19.setChecked(False)
         elif state(19) == '1':
-            self.chkbx_19.setChecked(True)
+            self.chkbxs_19.setChecked(True)
         else:
             pass
 
         if state(13) == '0':
-            self.chkbx_13.setChecked(False)
+            self.chkbxs_13.setChecked(False)
         elif state(13) == '1':
-            self.chkbx_13.setChecked(True)
+            self.chkbxs_13.setChecked(True)
         else:
             pass
 
         if state(6) == '0':
-            self.chkbx_06.setChecked(False)
+            self.chkbxs_06.setChecked(False)
         elif state(6) == '1':
-            self.chkbx_06.setChecked(True)
+            self.chkbxs_06.setChecked(True)
         else:
             pass
 
 
     def apply(self):
-        if self.chkbx_06.isChecked():
-            switch(6,1)
-        else:
-            switch(6,0)
-
-        if self.chkbx_26.isChecked():
-            switch(26,1)
-        else:
-            switch(26,0)
-
-        if self.chkbx_13.isChecked():
-            switch(13,1)
-        else:
-            switch(13,0)
-
-        if self.chkbx_19.isChecked():
-            switch(19,1)
-        else:
-            switch(19,0)
-
-
+        if self.chkbxs_26.isChecked():
+        	switch(26,1)
+        elif self.chkbxs_26.isChecked() == False:
+        	switch(26,0)
+        if self.chkbxs_19.isChecked():
+        	switch(19,1)
+        elif self.chkbxs_19.isChecked() == False:
+        	switch(19,0)
+        if self.chkbxs_13.isChecked():
+        	switch(13,1)
+        elif self.chkbxs_13.isChecked() == False:
+        	switch(13,0)
     def app(self):
         screen = QtGui.QDesktopWidget().screenGeometry()
         size = self.geometry()

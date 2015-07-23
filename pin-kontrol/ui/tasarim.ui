@@ -409,7 +409,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QPushButton" name="btn_ac_3">
+       <widget class="QPushButton" name="btn_kapat">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
           <horstretch>0</horstretch>
@@ -422,7 +422,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="btn_kapat">
+       <widget class="QPushButton" name="btn_bilgi">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
           <horstretch>0</horstretch>
