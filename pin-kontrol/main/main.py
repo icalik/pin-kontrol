@@ -19,6 +19,15 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         self.setupUi(self)
         QtCore.QObject.connect(self.btn_uygula, QtCore.SIGNAL("clicked()"), self.apply) #Butona tiklandiginda self.apply yordamini cagir
         self.check_state() # init oldugunda calis
+        self.set_disable()
+
+    def set_disable(self):
+        self.chkbxs_3v3_1.setEnabled(False)
+        self.chkbxs_3v3_2.setEnabled(False)
+        self.chkbxs_G1.setEnabled(False)
+        self.chkbxs_G2.setEnabled(False)
+        self.chkbxs_G3.setEnabled(False)
+        self.chkbxs_SD.setEnabled(False)
 
     def check_state(self): #Pin durum kontrol ve pine gore checkbox checked durumu
 
