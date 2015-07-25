@@ -29,6 +29,15 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         self.chkbxs_G3.setEnabled(False)
         self.chkbxs_SD.setEnabled(False)
 
+        self.chkbxa_5v_1.setEnabled(False)
+        self.chkbxa_5v_2.setEnabled(False)
+        self.chkbxa_G1.setEnabled(False)
+        self.chkbxa_G2.setEnabled(False)
+        self.chkbxa_G3.setEnabled(False)
+        self.chkbxa_G4.setEnabled(False)
+        self.chkbxa_G5.setEnabled(False)
+        self.chkbxa_SC.setEnabled(False)
+
     def check_state(self): #Pin durum kontrol ve pine gore checkbox checked durumu
 
         if state(2) == '0':
