@@ -18,6 +18,7 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         QtGui.QMainWindow.__init__(self)
         self.setupUi(self)
         QtCore.QObject.connect(self.btn_uygula, QtCore.SIGNAL("clicked()"), self.apply) #Butona tiklandiginda self.apply yordamini cagir
+
         self.check_state() # init oldugunda calis
         self.set_disable()
 
@@ -37,6 +38,9 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         self.chkbxa_G4.setEnabled(False)
         self.chkbxa_G5.setEnabled(False)
         self.chkbxa_SC.setEnabled(False)
+
+        #GPIO 16 ACT LED
+        self.chkbxa_16.setEnabled(False)
 
     def check_state(self): #Pin durum kontrol ve pine gore checkbox checked durumu
 
@@ -138,7 +142,89 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         else:
             pass
 
+        if state(14) == '0':
+            self.chkbxa_14.setChecked(False)
+        elif state(14) == '1':
+            self.chkbxa_14.setChecked(True)
+        else:
+            pass
 
+        if state(15) == '0':
+            self.chkbxa_15.setChecked(False)
+        elif state(15) == '1':
+            self.chkbxa_15.setChecked(True)
+        else:
+            pass
+
+        if state(18) == '0':
+            self.chkbxa_18.setChecked(False)
+        elif state(18) == '1':
+            self.chkbxa_18.setChecked(True)
+        else:
+            pass
+
+        if state(23) == '0':
+            self.chkbxa_23.setChecked(False)
+        elif state(23) == '1':
+            self.chkbxa_23.setChecked(True)
+        else:
+            pass
+
+        if state(24) == '0':
+            self.chkbxa_24.setChecked(False)
+        elif state(24) == '1':
+            self.chkbxa_24.setChecked(True)
+        else:
+            pass
+
+        if state(25) == '0':
+            self.chkbxa_25.setChecked(False)
+        elif state(25) == '1':
+            self.chkbxa_25.setChecked(True)
+        else:
+            pass
+
+        if state(8) == '0':
+            self.chkbxa_08.setChecked(False)
+        elif state(8) == '1':
+            self.chkbxa_08.setChecked(True)
+        else:
+            pass
+
+        if state(7) == '0':
+            self.chkbxa_07.setChecked(False)
+        elif state(7) == '1':
+            self.chkbxa_07.setChecked(True)
+        else:
+            pass
+
+        if state(12) == '0':
+            self.chkbxa_12.setChecked(False)
+        elif state(12) == '1':
+            self.chkbxa_12.setChecked(True)
+        else:
+            pass
+        """
+        if state(16) == '0':
+            self.chkbxa_16.setChecked(False)
+        elif state(16) == '1':
+            self.chkbxa_16.setChecked(True)
+        else:
+            pass
+        """
+        if state(20) == '0':
+            self.chkbxa_20.setChecked(False)
+        elif state(20) == '1':
+            self.chkbxa_20.setChecked(True)
+        else:
+            pass
+
+        if state(21) == '0':
+            self.chkbxa_21.setChecked(False)
+        elif state(21) == '1':
+            self.chkbxa_21.setChecked(True)
+        else:
+            pass
 
     def apply(self):
         if self.chkbxs_02.isChecked():
@@ -210,6 +296,81 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         	switch(26,1)
         elif self.chkbxs_26.isChecked() == False:
         	switch(26,0)
+
+        #SAG
+
+        if self.chkbxa_14.isChecked():
+        	switch(14,1)
+        elif self.chkbxa_14.isChecked() == False:
+        	switch(14,0)
+
+        if self.chkbxa_15.isChecked():
+        	switch(15,1)
+        elif self.chkbxa_15.isChecked() == False:
+        	switch(15,0)
+
+        if self.chkbxa_18.isChecked():
+        	switch(18,1)
+        elif self.chkbxa_18.isChecked() == False:
+        	switch(18,0)
+
+        if self.chkbxa_23.isChecked():
+        	switch(23,1)
+        elif self.chkbxa_23.isChecked() == False:
+        	switch(23,0)
+
+        if self.chkbxa_24.isChecked():
+        	switch(24,1)
+        elif self.chkbxa_24.isChecked() == False:
+        	switch(24,0)
+
+        if self.chkbxa_25.isChecked():
+        	switch(25,1)
+        elif self.chkbxa_25.isChecked() == False:
+        	switch(25,0)
+
+        if self.chkbxa_08.isChecked():
+        	switch(8,1)
+        elif self.chkbxa_08.isChecked() == False:
+        	switch(8,0)
+
+        if self.chkbxa_07.isChecked():
+        	switch(7,1)
+        elif self.chkbxa_07.isChecked() == False:
+        	switch(7,0)
+
+        if self.chkbxa_12.isChecked():
+        	switch(12,1)
+        elif self.chkbxa_12.isChecked() == False:
+        	switch(12,0)
+
+        if self.chkbxa_16.isChecked():
+        	switch(16,1)
+        elif self.chkbxa_16.isChecked() == False:
+        	switch(16,0)
+
+        if self.chkbxa_20.isChecked():
+        	switch(20,1)
+        elif self.chkbxa_20.isChecked() == False:
+        	switch(20,0)
+
+        if self.chkbxa_21.isChecked():
+        	switch(21,1)
+        elif self.chkbxa_21.isChecked() == False:
+        	switch(21,0)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
