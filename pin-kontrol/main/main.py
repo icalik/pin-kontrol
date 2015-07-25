@@ -18,9 +18,14 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         QtGui.QMainWindow.__init__(self)
         self.setupUi(self)
         QtCore.QObject.connect(self.btn_uygula, QtCore.SIGNAL("clicked()"), self.apply) #Butona tiklandiginda self.apply yordamini cagir
-
+        QtCore.QObject.connect(self.btn_bilgi, QtCore.SIGNAL("clicked()"), self.about)
+        QtCore.QObject.connect(self.btn_kapat, QtCore.SIGNAL("clicked()"), self.close)
         self.check_state() # init oldugunda calis
         self.set_disable()
+        self.setFixedSize(462, 396) #Boyut
+
+    def about(self):
+        QtGui.QMessageBox.information(self, u"Hakkinda", u"Ismet Said Calik <ismetsaid.calik@pardus.net.tr>\nErdogan Bilgici <destek@linuxcozumleri.com>")
 
     def set_disable(self):
         self.chkbxs_3v3_1.setEnabled(False)
@@ -40,6 +45,7 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         self.chkbxa_SC.setEnabled(False)
 
         #GPIO 16 ACT LED
+
         self.chkbxa_16.setEnabled(False)
 
     def check_state(self): #Pin durum kontrol ve pine gore checkbox checked durumu
@@ -358,21 +364,6 @@ class MainWindow(QtGui.QMainWindow, Ui_Dialog):
         	switch(21,1)
         elif self.chkbxa_21.isChecked() == False:
         	switch(21,0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     def app(self):
         screen = QtGui.QDesktopWidget().screenGeometry()
